@@ -53,6 +53,8 @@ html {
 }
 
 body {
+  max-width: 120rem;
+  margin: 0 auto; /* make it centered */
   font-family: "Noto Serif", serif;
   line-height: 1;
   font-weight: 400;
@@ -67,7 +69,6 @@ body {
 .container {
   max-width: 120rem;
   padding: 0;
-  margin: 0 auto; /* make it centered */
 }
 
 /* FUNCTIONAL CLASSES*/
@@ -120,6 +121,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 0 auto;
   font-size: 3.2rem;
   text-decoration: none;
@@ -350,7 +352,9 @@ body {
 /* //////////////////////////TEST///////////////////// */
 
 .order-slider {
-  max-width: 120rem;
+  width: 120rem;
+
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -659,9 +663,10 @@ footer {
 .footer-container {
   display: flex;
   margin: 4.8rem auto 0 auto;
+  padding: 0 1rem 0 1rem;
   justify-content: space-between;
   align-items: top;
-  width: 120rem;
+  width: 100%;
   position: relative;
   padding-bottom: 3.2rem;
 }
@@ -671,14 +676,16 @@ footer {
   position: absolute;
   top: 0;
   /* left: 50vw; */
-  left: 60rem;
+  /* left: 60rem; */
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .circle-footer {
   z-index: 2;
   position: absolute;
   top: 0;
-  left: 60rem;
+  /* left: 60rem; */
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 15rem;
   height: 15rem;
